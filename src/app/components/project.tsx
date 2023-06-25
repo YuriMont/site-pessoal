@@ -20,7 +20,10 @@ export default function Project(project: ProjectsParams) {
 
   return (
     <div className="flex flex-col hover:opacity-80">
-      <div className="flex h-[352px] items-center rounded-md bg-gray-700 px-8 py-12 transition-all sm:h-auto">
+      <Link
+        href={project.link}
+        className="flex h-[352px] items-center rounded-md bg-gray-700 px-8 py-12 transition-all sm:h-auto"
+      >
         {readMore ? (
           <p className="">{project.resume}</p>
         ) : (
@@ -32,10 +35,8 @@ export default function Project(project: ProjectsParams) {
             alt="imagem"
           />
         )}
-      </div>
-      <Link href={project.link} className="mt-3 text-2xl font-bold">
-        {project.name}
       </Link>
+      <h2 className="mt-3 text-2xl font-bold">{project.name}</h2>
       <button onClick={handleShowText} className="transition-all">
         {readMore ? (
           <span className="flex items-center text-red-500">
