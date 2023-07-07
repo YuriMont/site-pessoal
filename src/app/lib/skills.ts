@@ -4,11 +4,11 @@ const anoAtual = dataAtual.getFullYear()
 export const mySkills = [
   {
     name: 'NodeJS',
-    years: anoAtual - 2022,
+    years: anoAtual - 2021,
   },
   {
     name: 'ReactJS',
-    years: anoAtual - 2022,
+    years: anoAtual - 2021,
   },
   {
     name: 'NextJS',
@@ -20,7 +20,7 @@ export const mySkills = [
   },
   {
     name: 'TypeScript',
-    years: anoAtual - 2022,
+    years: anoAtual - 2021,
   },
   {
     name: 'JavaScript',
